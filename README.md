@@ -1,5 +1,5 @@
 # leesin-instalock
-A simple python script writed for accept the game and instalock lee sin
+A simple python script writed to accept matches and instalock lee sin
 
 
 #Cosas a arreglar#
