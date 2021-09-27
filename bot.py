@@ -1,4 +1,3 @@
-import pygetwindow as gw
 import cv2
 import numpy as np
 import pyautogui
@@ -6,9 +5,9 @@ import pyautogui
 class Bot:
     def __init__(self):
         
-        self.screen_actual = cv2.imread("screenshot.png",cv2.IMREAD_UNCHANGED)
+        self.screen_actual = cv2.imread("champs/screenshot.png",cv2.IMREAD_UNCHANGED)
         self.result = cv2.matchTemplate(self.screen_actual, self.screen_actual, cv2.TM_CCOEFF_NORMED)
-        self.screen_list = ["picking.png","banning.png"]
+        self.screen_list = ["champs/picking.png","champs/banning.png"]
         self.threshold = 0.6
         self.buttonw = 0
         self.buttonh = 0
@@ -37,8 +36,8 @@ class Bot:
     #UPDATE WHAT YOU ARE LOOKING, AND EXPORT TO IMG.
     def updateScreen(self,lol_window):
         myScreenshot = pyautogui.screenshot()
-        myScreenshot.save(r'screenshot.png')
-        screen_updated = cv2.imread("screenshot.png",cv2.IMREAD_UNCHANGED)
+        myScreenshot.save(r'champs/screenshot.png')
+        screen_updated = cv2.imread("champs/screenshot.png",cv2.IMREAD_UNCHANGED)
         return screen_updated
 
 
