@@ -41,7 +41,7 @@ class Bot:
         return screen_updated
 
 
-    #ACCEPT THE GAME.
+    #SEARCH FOR THE BUTTON OR IMG THAT HAS BEEN PASSED, AND CHECK IF IS THERE
     def searchImage(self,screen_updated,img):
 
         #GET THE ACCEPT BUTTON AND COMPARE TO THE ACTUAL SCREEN
