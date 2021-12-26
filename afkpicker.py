@@ -14,7 +14,7 @@ FOLDER = "champs/"
 
 
 def main():
-    print("Que onda pa, te vas a hacer una pajita?, Tranqui te suporteo.")
+    print("Que onda pa, Tranqui te suporteo.")
     primary_champion = input("Decime que te pickeo(leesin): ") 
     champ = FOLDER + primary_champion + ".png"
 
